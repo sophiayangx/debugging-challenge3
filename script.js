@@ -12,7 +12,7 @@ setInterval(function() {
 var borderIsBlue = false
 setInterval(function() {
   if (backgroundIsBlue) {
-$("#border-blinker").css({border: "3px solid black"});
+$("#border-blinker").css({border: "3px dotted black"});
     borderIsBlue = false;
   } else {		
 $("#border-blinker").css({border: "none"})
@@ -23,12 +23,10 @@ $("#border-blinker").css({border: "none"})
 var textIsBlue = false
 setInterval(function() {
   if (textIsBlue) {
-    $("#text-blinker").doTimeout({text: "3px solid black"}).empty;
+    $("#text-blinker").css();
     textIsBlue = false;
   } else {		
-    $("#text-blinker").doTimeout({text: "none"})
+    $("#text-blinker").fadeOut().empty
     textIsBlue = true;
   }	
 }, 500)
-
-  .fadeOut().empty()
