@@ -2,20 +2,12 @@ var backgroundIsBlue = false
 setInterval(function() {
   if (backgroundIsBlue) {
     $("#blue-blinker").css({background: "white"});
-    backgroundIsBlue = true;
+    backgroundIsBlue = false;
   } else {		
     $("#blue-blinker").css({background: "blue"});	
-    backgroundIsBlue = false;
+    backgroundIsBlue = true;
   }	
 }, 500)
 
-var borderIsBlue = false
-setInterval(function() {
-  if (backgroundIsBlue) {
-    $("#blue-blinker").css({border: "white"});
-    backgroundIsBlue = true;
-  } else {		
-    $("#blue-blinker").css({border: "blue"});	
-    backgroundIsBlue = true;
-  }	
-}, 500)
+$("#blue==-blinker").css({border: "3px solid black"});
+$("#blue-blinker").css({border: "none"});
