@@ -19,3 +19,14 @@ $("#border-blinker").css({border: "none"})
     borderIsBlue = true;
   }	
 }, 500)
+
+var textIsBlue = false
+setInterval(function() {
+  if (textIsBlue) {
+    $("#text-blinker").css({text: "3px solid black"});
+    textIsBlue = false;
+  } else {		
+    $("#text-blinker").css({text: "none"})
+    textIsBlue = true;
+  }	
+}, 500)
