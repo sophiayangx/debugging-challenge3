@@ -23,10 +23,10 @@ $("#border-blinker").css({border: "none"})
 var textIsBlue = false
 setInterval(function() {
   if (textIsBlue) {
-    $("#text-blinker").css();
+    $("#text-blinker").fadeOut();
     textIsBlue = false;
   } else {		
-    $("#text-blinker").fadeOut()
+    $("#text-blinker").fadeIn()
     textIsBlue = true;
   }	
 }, 500)
