@@ -15,6 +15,6 @@ setInterval(function() {
     backgroundIsBlue = true;
   } else {		
     $("#blue-blinker").css({border: "blue"});	
-    backgroundIsBlue = false;
+    backgroundIsBlue = true;
   }	
 }, 500)
