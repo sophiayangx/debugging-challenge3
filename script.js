@@ -9,5 +9,12 @@ setInterval(function() {
   }	
 }, 500)
 
-$("#blue==-blinker").css({border: "3px solid black"});
-$("#blue-blinker").css({border: "none"});
+setInterval(function() {
+  if (backgroundIsBlue) {
+$("#border-blinker").css({border: "3px solid black"});
+    backgroundIsBlue = false;
+  } else {		
+$("#border-blinker").css({border: "none"})
+    backgroundIsBlue = true;
+  }	
+}, 500)
