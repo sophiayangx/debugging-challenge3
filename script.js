@@ -5,10 +5,11 @@ setInterval(function() {
     backgroundIsBlue = true;
   } else {		
     $("#blue-blinker").css({background: "blue"});	
-    backgroundIsBlue = true;
+    backgroundIsBlue = false;
   }	
 }, 500)
 
+var borderIsBlue = false
 setInterval(function() {
   if (backgroundIsBlue) {
     $("#blue-blinker").css({border: "white"});
