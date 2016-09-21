@@ -12,7 +12,7 @@ setInterval(function() {
 var borderIsBlue = false
 setInterval(function() {
   if (backgroundIsBlue) {
-$("#border-blinker").css({border: "3px dotted black"});
+$("#border-blinker").css({border: "3px solid black"});
     borderIsBlue = false;
   } else {		
 $("#border-blinker").css({border: "none"})
@@ -26,7 +26,9 @@ setInterval(function() {
     $("#text-blinker").css();
     textIsBlue = false;
   } else {		
-    $("#text-blinker").fadeOut().empty
+    $("#text-blinker").fadeOut()
     textIsBlue = true;
   }	
 }, 500)
+
+
